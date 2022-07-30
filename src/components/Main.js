@@ -4,16 +4,25 @@ import Problema from './Problema'
 
 const Main = () => {
 
-  useEffect(() =>{
-    setProblema(data);
-  })
-  const { data } = useContext(ContextData);
-  const [problema,setProblema] = useState([]);
+  const { data, nivel } = useContext(ContextData);
+  const [problema, setProblema] = useState(data);
+
+  useEffect(() => {
+    if (data) {
+      setProblema(data);
+      console.log(problema);
+    }
+    
+  },[data])
+
   return (
     <div>
-      {problema.map(e=>(
-        <Problema problema={e} />
-      ))}
+      {problema.map(e => {
+        if (e.nivel <= nivel) {
+          return (<Problema key={e.id} problema={e} />)
+        }
+      }
+      )}
     </div>
   )
 }
