@@ -1,0 +1,541 @@
+[
+  {
+    "id": 1,
+    "problema": "No hay nada",
+    "sacrificio": [],
+    "recompensa": [],
+    "nivel": "1",
+    "permanente": false,
+    "boss": true
+  },
+  {
+    "id": 2,
+    "problema": "Hay algo",
+    "sacrificio": [],
+    "recompensa": [],
+    "nivel": "2",
+    "permanente": false,
+    "boss": true
+  },
+  {
+    "id": 3,
+    "problema": "No existes",
+    "sacrificio": [],
+    "recompensa": [
+      {
+        "recompensa": "Esperanza",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "3",
+    "permanente": false,
+    "boss": true
+  },
+  {
+    "id": 4,
+    "problema": "Empiezas a existir",
+    "sacrificio": [],
+    "recompensa": [
+      {
+        "recompensa": "Cuerpo",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "4",
+    "permanente": false,
+    "boss": true
+  },
+  {
+    "id": 5,
+    "problema": "Existes",
+    "sacrificio": [],
+    "recompensa": [
+      {
+        "recompensa": "Vida",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "5",
+    "permanente": false,
+    "boss": true
+  },
+  {
+    "id": 6,
+    "problema": "Naces",
+    "sacrificio": [],
+    "recompensa": [
+      {
+        "recompensa": "Amor",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "6",
+    "permanente": false,
+    "boss": true
+  },
+  {
+    "id": 7,
+    "problema": "Eres un Bebe",
+    "sacrificio": [
+      {
+        "sacrificio": "Conocimiento",
+        "cantidad": 8
+      }
+    ],
+    "recompensa": [
+      {
+        "recompensa": "Integridad",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "7",
+    "permanente": false,
+    "boss": true
+  },
+  {
+    "id": 8,
+    "problema": "Necesitas jugar",
+    "sacrificio": [],
+    "recompensa": [
+      {
+        "recompensa": "Memoria",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "7",
+    "permanente": true,
+    "boss": false
+  },
+  {
+    "id": 9,
+    "problema": "Tienes que aprender",
+    "sacrificio": [],
+    "recompensa": [
+      {
+        "recompensa": "Conocimiento",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "7",
+    "permanente": true,
+    "boss": false
+  },
+  {
+    "id": 10,
+    "problema": "Eres un niño",
+    "sacrificio": [
+      {
+        "sacrificio": "Experiencia",
+        "cantidad": 4
+      }
+    ],
+    "recompensa": [
+      {
+        "recompensa": "Lealtad",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "8",
+    "permanente": false,
+    "boss": true
+  },
+  {
+    "id": 11,
+    "problema": "Necesitas mas amigos",
+    "sacrificio": [],
+    "recompensa": [
+      {
+        "recompensa": "Amigo",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "8",
+    "permanente": true,
+    "boss": false
+  },
+  {
+    "id": 12,
+    "problema": "Necesitas ver a un amigo",
+    "sacrificio": [],
+    "recompensa": [
+      {
+        "recompensa": "Memoria",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "8",
+    "permanente": true,
+    "boss": false
+  },
+  {
+    "id": 13,
+    "problema": "Necesitas mudarte",
+    "sacrificio": [
+      {
+        "sacrificio": "Amigo",
+        "cantidad": 1
+      }
+    ],
+    "recompensa": [
+      {
+        "recompensa": "Experiencia",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "8",
+    "permanente": true,
+    "boss": false
+  },
+  {
+    "id": 14,
+    "problema": "Eres un adolecente",
+    "sacrificio": [
+      {
+        "sacrificio": "Corazon Roto",
+        "cantidad": 2
+      }
+    ],
+    "recompensa": [
+      {
+        "recompensa": "Experiencia",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "9",
+    "permanente": false,
+    "boss": true
+  },
+  {
+    "id": 15,
+    "problema": "Necesitas conseguir pareja",
+    "sacrificio": [],
+    "recompensa": [
+      {
+        "recompensa": "Pareja",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "9",
+    "permanente": true,
+    "boss": false
+  },
+  {
+    "id": 16,
+    "problema": "Necesitas hacer el amor",
+    "sacrificio": [],
+    "recompensa": [
+      {
+        "recompensa": "Memoria",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "9",
+    "permanente": true,
+    "boss": false
+  },
+  {
+    "id": 17,
+    "problema": "Necesitas sentirte aceptado",
+    "sacrificio": [
+      {
+        "sacrificio": "Pareja",
+        "cantidad": 1
+      }
+    ],
+    "recompensa": [
+      {
+        "recompensa": "Corazon Roto",
+        "cantidad": 1
+      },
+      {
+        "recompensa": "Experiencia",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "9",
+    "permanente": true,
+    "boss": false
+  },
+  {
+    "id": 18,
+    "problema": "Necesitas conseguir empleo",
+    "sacrificio": [],
+    "recompensa": [
+      {
+        "recompensa": "Empleo",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "9",
+    "permanente": true,
+    "boss": false
+  },
+  {
+    "id": 19,
+    "problema": "Debes ir a trabajar",
+    "sacrificio": [],
+    "recompensa": [
+      {
+        "recompensa": "Dinero",
+        "cantidad": 1
+      },
+      {
+        "recompensa": "Estres",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "9",
+    "permanente": true,
+    "boss": false
+  },
+  {
+    "id": 20,
+    "problema": "Debes ir a trabajar",
+    "sacrificio": [],
+    "recompensa": [
+      {
+        "recompensa": "Empleo",
+        "cantidad": 1
+      },
+      {
+        "recompensa": "Stress",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "9",
+    "permanente": true,
+    "boss": false
+  },
+  {
+    "id": 21,
+    "problema": "Necesitas Relajarse",
+    "sacrificio": [
+      {
+        "sacrificio": "Stress",
+        "cantidad": 1
+      }
+    ],
+    "recompensa": [],
+    "nivel": "9",
+    "permanente": true,
+    "boss": false
+  },
+  {
+    "id": 22,
+    "problema": "Necesitas un mejor empleo",
+    "sacrificio": [
+      {
+        "sacrificio": "Conocimiento",
+        "cantidad": 4
+      }
+    ],
+    "recompensa": [
+      {
+        "recompensa": "Respeto",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "9",
+    "permanente": true,
+    "boss": false
+  },
+  {
+    "id": 22,
+    "problema": "Eres un Adulto",
+    "sacrificio": [
+      {
+        "sacrificio": "Lealtad",
+        "cantidad": 1
+      },
+      {
+        "recompensa": "Sueños Rotos",
+        "cantidad": 1
+      }
+    ],
+    "recompensa": [],
+    "nivel": "10",
+    "permanente": false,
+    "boss": true
+  },
+  {
+    "id": 23,
+    "problema": "Necesitas crear",
+    "sacrificio": [
+      {
+        "sacrificio": "Dinero",
+        "cantidad": 4
+      }
+    ],
+    "recompensa": [
+      {
+        "recompensa": "Proyecto",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "10",
+    "permanente": true,
+    "boss": false
+  },
+  {
+    "id": 24,
+    "problema": "Necesitas mas cosas",
+    "sacrificio": [
+      {
+        "sacrificio": "Dinero",
+        "cantidad": 1
+      }
+    ],
+    "recompensa": [
+      {
+        "recompensa": "Mas cosas",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "10",
+    "permanente": true,
+    "boss": false
+  },
+  {
+    "id": 25,
+    "problema": "Debes fracasar",
+    "sacrificio": [
+      {
+        "sacrificio": "Proyecto",
+        "cantidad": 1
+      }
+    ],
+    "recompensa": [
+      {
+        "recompensa": "Sueños Rotos",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "10",
+    "permanente": true,
+    "boss": false
+  },
+  {
+    "id": 26,
+    "problema": "Estás en problemas",
+    "sacrificio": [
+      {
+        "sacrificio": "Integridad",
+        "cantidad": 1
+      },
+      {
+        "sacrificio": "Ambicion Perdida",
+        "cantidad": 1
+      }
+    ],
+    "recompensa": [],
+    "nivel": "11",
+    "permanente": false,
+    "boss": true
+  },
+  {
+    "id": 27,
+    "problema": "Necesitas intentarlo mas duro",
+    "sacrificio": [
+      {
+        "sacrificio": "Integridad",
+        "cantidad": 1
+      },
+      {
+        "sacrificio": "Ambicion Perdida",
+        "cantidad": 1
+      }
+    ],
+    "recompensa": [
+      {
+        "recompensa": "Ambición Perdida",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "11",
+    "permanente": true,
+    "boss": false
+  },
+  {
+    "id": 27,
+    "problema": "Necesitas intentarlo mas duro",
+    "sacrificio": [
+      {
+        "sacrificio": "Respeto",
+        "cantidad": 5
+      },
+      {
+        "sacrificio": "Cosas",
+        "cantidad": 10
+      }
+    ],
+    "recompensa": [
+      {
+        "recompensa": "Ambición Perdida",
+        "cantidad": 1
+      }
+    ],
+    "nivel": "11",
+    "permanente": true,
+    "boss": false
+  },
+  {
+    "id": 28,
+    "problema": "Estas viejo",
+    "sacrificio": [
+      {
+        "sacrificio": "Amor",
+        "cantidad": 1
+      },
+      {
+        "sacrificio": "Memoria",
+        "cantidad": 10
+      }
+    ],
+    "recompensa": [],
+    "nivel": "12",
+    "permanente": false,
+    "boss": true
+  },
+  {
+    "id": 28,
+    "problema": "Empiezas a aceptarlo",
+    "sacrificio": [
+      {
+        "sacrificio": "Vida",
+        "cantidad": 1
+      }
+    ],
+    "recompensa": [],
+    "nivel": "13",
+    "permanente": false,
+    "boss": true
+  },
+  {
+    "id": 29,
+    "problema": "Estas muerto",
+    "sacrificio": [
+      {
+        "sacrificio": "Cuerpo",
+        "cantidad": 1
+      }
+    ],
+    "recompensa": [],
+    "nivel": "14",
+    "permanente": false,
+    "boss": true
+  },
+  {
+    "id": 30,
+    "problema": "Eres Olvidado",
+    "sacrificio": [
+      {
+        "sacrificio": "Esperanza",
+        "cantidad": 1
+      }
+    ],
+    "recompensa": [],
+    "nivel": "15",
+    "permanente": false,
+    "boss": true
+  }
+]
