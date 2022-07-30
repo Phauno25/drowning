@@ -4,21 +4,27 @@ import Problema from './Problema'
 
 const Main = () => {
 
-  const { data, nivel } = useContext(ContextData);
+  const {level} = useContext(ContextData);
+  const [data, setData] = useState([]);
   const [problema, setProblema] = useState(data);
 
   useEffect(() => {
-    if (data) {
-      setProblema(data);
-      console.log(problema);
-    }
-    
-  },[data])
+
+    const getProblemas = async () => {
+        let mock = [];
+        mock = await fetch('./problemasMock.json')
+            .then(res => res.json())
+            .then(res => setData(res))
+            .catch((err)=> console.log(err));
+    };
+    getProblemas();
+   
+}, [])
 
   return (
     <div>
       {problema.map(e => {
-        if (e.nivel <= nivel) {
+        if (e.nivel <= level) {
           return (<Problema key={e.id} problema={e} />)
         }
       }
