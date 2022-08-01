@@ -4,6 +4,7 @@
     "problema": "No hay nada",
     "sacrificio": [],
     "recompensa": [],
+    "condicion": [],
     "nivel": "1",
     "permanente": false,
     "boss": true
@@ -13,6 +14,7 @@
     "problema": "Hay algo",
     "sacrificio": [],
     "recompensa": [],
+    "condicion": [],
     "nivel": "2",
     "permanente": false,
     "boss": true
@@ -27,6 +29,7 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "nivel": "3",
     "permanente": false,
     "boss": true
@@ -41,6 +44,7 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "nivel": "4",
     "permanente": false,
     "boss": true
@@ -55,6 +59,7 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "nivel": "5",
     "permanente": false,
     "boss": true
@@ -69,12 +74,13 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "nivel": "6",
     "permanente": false,
     "boss": true
   },
   {
-    "id": 7,
+    "id": 50,
     "problema": "Eres un Bebe",
     "sacrificio": [
       {
@@ -88,6 +94,7 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "nivel": "7",
     "permanente": false,
     "boss": true
@@ -103,6 +110,7 @@
       }
     ],
     "nivel": "7",
+    "condicion": [],
     "permanente": true,
     "boss": false
   },
@@ -117,11 +125,12 @@
       }
     ],
     "nivel": "7",
+    "condicion": [],
     "permanente": true,
     "boss": false
   },
   {
-    "id": 10,
+    "id": 60,
     "problema": "Eres un niño",
     "sacrificio": [
       {
@@ -135,6 +144,7 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "nivel": "8",
     "permanente": false,
     "boss": true
@@ -149,6 +159,7 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "nivel": "8",
     "permanente": true,
     "boss": false
@@ -161,6 +172,16 @@
       {
         "recompensa": "Memoria",
         "cantidad": 1
+      },
+      {
+        "recompensa": "Ver Amigo",
+        "cantidad": 1
+      }
+    ],
+    "condicion": [
+      { 
+        "condicion": "Amigo", 
+        "cantidad": 1 
       }
     ],
     "nivel": "8",
@@ -169,10 +190,14 @@
   },
   {
     "id": 13,
-    "problema": "Necesitas mudarte",
+    "problema": "Debes mudarte",
     "sacrificio": [
       {
         "sacrificio": "Amigo",
+        "cantidad": 1
+      },
+      {
+        "sacrificio": "Ver Amigo",
         "cantidad": 1
       }
     ],
@@ -182,12 +207,18 @@
         "cantidad": 1
       }
     ],
+    "condicion": [
+      {
+        "condicion": "Ver Amigo",
+        "cantidad": 1
+      }
+    ],
     "nivel": "8",
     "permanente": true,
     "boss": false
   },
   {
-    "id": 14,
+    "id": 70,
     "problema": "Eres un adolecente",
     "sacrificio": [
       {
@@ -201,6 +232,7 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "nivel": "9",
     "permanente": false,
     "boss": true
@@ -215,6 +247,7 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "nivel": "9",
     "permanente": true,
     "boss": false
@@ -229,6 +262,7 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "nivel": "9",
     "permanente": true,
     "boss": false
@@ -252,6 +286,7 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "nivel": "9",
     "permanente": true,
     "boss": false
@@ -266,6 +301,7 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "nivel": "9",
     "permanente": true,
     "boss": false
@@ -284,6 +320,7 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "nivel": "9",
     "permanente": true,
     "boss": false
@@ -302,6 +339,7 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "nivel": "9",
     "permanente": true,
     "boss": false
@@ -315,6 +353,7 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "recompensa": [],
     "nivel": "9",
     "permanente": true,
@@ -335,12 +374,13 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "nivel": "9",
     "permanente": true,
     "boss": false
   },
   {
-    "id": 22,
+    "id": 80,
     "problema": "Eres un Adulto",
     "sacrificio": [
       {
@@ -352,6 +392,7 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "recompensa": [],
     "nivel": "10",
     "permanente": false,
@@ -372,6 +413,7 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "nivel": "10",
     "permanente": true,
     "boss": false
@@ -391,6 +433,7 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "nivel": "10",
     "permanente": true,
     "boss": false
@@ -410,12 +453,13 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "nivel": "10",
     "permanente": true,
     "boss": false
   },
   {
-    "id": 26,
+    "id": 90,
     "problema": "Estás en problemas",
     "sacrificio": [
       {
@@ -427,6 +471,7 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "recompensa": [],
     "nivel": "11",
     "permanente": false,
@@ -451,6 +496,7 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "nivel": "11",
     "permanente": true,
     "boss": false
@@ -474,12 +520,13 @@
         "cantidad": 1
       }
     ],
+    "condicion": [],
     "nivel": "11",
     "permanente": true,
     "boss": false
   },
   {
-    "id": 28,
+    "id": 100,
     "problema": "Estas viejo",
     "sacrificio": [
       {
@@ -492,12 +539,13 @@
       }
     ],
     "recompensa": [],
+    "condicion": [],
     "nivel": "12",
     "permanente": false,
     "boss": true
   },
   {
-    "id": 28,
+    "id": 101,
     "problema": "Empiezas a aceptarlo",
     "sacrificio": [
       {
@@ -506,6 +554,7 @@
       }
     ],
     "recompensa": [],
+    "condicion": [],
     "nivel": "13",
     "permanente": false,
     "boss": true
@@ -520,10 +569,12 @@
       }
     ],
     "recompensa": [],
+    "condicion": [],
     "nivel": "14",
     "permanente": false,
     "boss": true
   },
+  
   {
     "id": 30,
     "problema": "Eres Olvidado",
@@ -534,6 +585,7 @@
       }
     ],
     "recompensa": [],
+    "condicion": [],
     "nivel": "15",
     "permanente": false,
     "boss": true
