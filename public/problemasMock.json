@@ -6,6 +6,7 @@
     "recompensa": [],
     "condicion": [],
     "nivel": "1",
+    "tiempo": 10,
     "permanente": false,
     "boss": true
   },
@@ -16,6 +17,7 @@
     "recompensa": [],
     "condicion": [],
     "nivel": "2",
+    "tiempo": 6,
     "permanente": false,
     "boss": true
   },
@@ -31,6 +33,7 @@
     ],
     "condicion": [],
     "nivel": "3",
+    "tiempo": 5,
     "permanente": false,
     "boss": true
   },
@@ -46,6 +49,7 @@
     ],
     "condicion": [],
     "nivel": "4",
+    "tiempo": 5,
     "permanente": false,
     "boss": true
   },
@@ -61,11 +65,12 @@
     ],
     "condicion": [],
     "nivel": "5",
+    "tiempo": 4,
     "permanente": false,
     "boss": true
   },
   {
-    "id": 6,
+    "id": 31,
     "problema": "Naces",
     "sacrificio": [],
     "recompensa": [
@@ -76,6 +81,7 @@
     ],
     "condicion": [],
     "nivel": "6",
+    "tiempo": 4,
     "permanente": false,
     "boss": true
   },
@@ -96,6 +102,7 @@
     ],
     "condicion": [],
     "nivel": "7",
+    "tiempo": 8,
     "permanente": false,
     "boss": true
   },
@@ -109,8 +116,9 @@
         "cantidad": 1
       }
     ],
-    "nivel": "7",
     "condicion": [],
+    "nivel": "7",
+    "tiempo": 3,
     "permanente": true,
     "boss": false
   },
@@ -124,8 +132,9 @@
         "cantidad": 1
       }
     ],
-    "nivel": "7",
     "condicion": [],
+    "nivel": "6",
+    "tiempo": 3,
     "permanente": true,
     "boss": false
   },
@@ -146,6 +155,7 @@
     ],
     "condicion": [],
     "nivel": "8",
+    "tiempo": 8,
     "permanente": false,
     "boss": true
   },
@@ -161,6 +171,7 @@
     ],
     "condicion": [],
     "nivel": "8",
+    "tiempo": 3,
     "permanente": true,
     "boss": false
   },
@@ -179,12 +190,13 @@
       }
     ],
     "condicion": [
-      { 
-        "condicion": "Amigo", 
-        "cantidad": 1 
+      {
+        "condicion": "Amigo",
+        "cantidad": 1
       }
     ],
     "nivel": "8",
+    "tiempo": 3,
     "permanente": true,
     "boss": false
   },
@@ -214,6 +226,7 @@
       }
     ],
     "nivel": "8",
+    "tiempo": 3,
     "permanente": true,
     "boss": false
   },
@@ -240,15 +253,30 @@
   {
     "id": 15,
     "problema": "Necesitas conseguir pareja",
-    "sacrificio": [],
+    "sacrificio": [
+      {
+        "sacrificio": "Soltero",
+        "cantidad": 1
+      }
+    ],
     "recompensa": [
       {
         "recompensa": "Pareja",
         "cantidad": 1
       }
     ],
-    "condicion": [],
+    "condicion": [
+      {
+        "condicion": "Pareja",
+        "cantidad": 0
+      },
+      {
+        "condicion": "Soltero",
+        "cantidad": 1
+      }
+    ],
     "nivel": "9",
+    "tiempo": 8,
     "permanente": true,
     "boss": false
   },
@@ -260,10 +288,20 @@
       {
         "recompensa": "Memoria",
         "cantidad": 1
+      },
+      {
+        "recompensa": "Sexo",
+        "cantidad": 1
       }
     ],
-    "condicion": [],
+    "condicion": [
+      {
+        "condicion": "Pareja",
+        "cantidad": 1
+      }
+    ],
     "nivel": "9",
+    "tiempo": 3,
     "permanente": true,
     "boss": false
   },
@@ -274,6 +312,10 @@
       {
         "sacrificio": "Pareja",
         "cantidad": 1
+      },
+      {
+        "sacrificio": "Sexo",
+        "cantidad": 100
       }
     ],
     "recompensa": [
@@ -284,25 +326,54 @@
       {
         "recompensa": "Experiencia",
         "cantidad": 1
+      },
+      {
+        "recompensa": "Soltero",
+        "cantidad": 1
       }
     ],
-    "condicion": [],
+    "condicion": [
+      {
+        "condicion": "Pareja",
+        "cantidad": 1
+      },
+      {
+        "condicion": "Sexo",
+        "cantidad": 1
+      }
+    ],
     "nivel": "9",
+    "tiempo": 5,
     "permanente": true,
     "boss": false
   },
   {
     "id": 18,
-    "problema": "Necesitas conseguir empleo",
-    "sacrificio": [],
-    "recompensa": [
+    "problema": "Necesitas conseguir trabajo",
+    "sacrificio": [
       {
-        "recompensa": "Empleo",
+        "sacrificio": "Desempleado",
         "cantidad": 1
       }
     ],
-    "condicion": [],
+    "recompensa": [
+      {
+        "recompensa": "Trabajo",
+        "cantidad": 1
+      }
+    ],
+    "condicion": [
+      {
+        "condicion": "Trabajo",
+        "cantidad": 0
+      },
+      {
+        "condicion": "Desempleado",
+        "cantidad": 1
+      }
+    ],
     "nivel": "9",
+    "tiempo": 3,
     "permanente": true,
     "boss": false
   },
@@ -316,31 +387,22 @@
         "cantidad": 1
       },
       {
-        "recompensa": "Estres",
-        "cantidad": 1
-      }
-    ],
-    "condicion": [],
-    "nivel": "9",
-    "permanente": true,
-    "boss": false
-  },
-  {
-    "id": 20,
-    "problema": "Debes ir a trabajar",
-    "sacrificio": [],
-    "recompensa": [
-      {
-        "recompensa": "Empleo",
+        "recompensa": "Stress",
         "cantidad": 1
       },
       {
-        "recompensa": "Stress",
+        "recompensa": "ExpLaboral",
         "cantidad": 1
       }
     ],
-    "condicion": [],
+    "condicion": [
+      {
+        "condicion": "Trabajo",
+        "cantidad": 1
+      }
+    ],
     "nivel": "9",
+    "tiempo": 3,
     "permanente": true,
     "boss": false
   },
@@ -353,15 +415,21 @@
         "cantidad": 1
       }
     ],
-    "condicion": [],
+    "condicion": [
+      {
+        "condicion": "Stress",
+        "cantidad": 1
+      }
+    ],
     "recompensa": [],
     "nivel": "9",
+    "tiempo": 2,
     "permanente": true,
     "boss": false
   },
   {
     "id": 22,
-    "problema": "Necesitas un mejor empleo",
+    "problema": "Necesitas un mejor trabajo",
     "sacrificio": [
       {
         "sacrificio": "Conocimiento",
@@ -374,8 +442,14 @@
         "cantidad": 1
       }
     ],
-    "condicion": [],
+    "condicion": [
+      {
+        "condicion": "ExpLaboral",
+        "cantidad": 1
+      }
+    ],
     "nivel": "9",
+    "tiempo": 5,
     "permanente": true,
     "boss": false
   },
@@ -388,13 +462,14 @@
         "cantidad": 1
       },
       {
-        "recompensa": "Sueños Rotos",
+        "sacrificio": "Sueños Rotos",
         "cantidad": 1
       }
     ],
     "condicion": [],
     "recompensa": [],
     "nivel": "10",
+    "tiempo": 8,
     "permanente": false,
     "boss": true
   },
@@ -415,6 +490,7 @@
     ],
     "condicion": [],
     "nivel": "10",
+    "tiempo": 5,
     "permanente": true,
     "boss": false
   },
@@ -429,12 +505,13 @@
     ],
     "recompensa": [
       {
-        "recompensa": "Mas cosas",
+        "recompensa": "Cosas",
         "cantidad": 1
       }
     ],
     "condicion": [],
     "nivel": "10",
+    "tiempo": 3,
     "permanente": true,
     "boss": false
   },
@@ -453,8 +530,14 @@
         "cantidad": 1
       }
     ],
-    "condicion": [],
+    "condicion": [
+      {
+        "condicion": "Proyecto",
+        "cantidad": 1
+      }
+    ],
     "nivel": "10",
+    "tiempo": 5,
     "permanente": true,
     "boss": false
   },
@@ -474,32 +557,9 @@
     "condicion": [],
     "recompensa": [],
     "nivel": "11",
+    "tiempo": 8,
     "permanente": false,
     "boss": true
-  },
-  {
-    "id": 27,
-    "problema": "Necesitas intentarlo mas duro",
-    "sacrificio": [
-      {
-        "sacrificio": "Integridad",
-        "cantidad": 1
-      },
-      {
-        "sacrificio": "Ambicion Perdida",
-        "cantidad": 1
-      }
-    ],
-    "recompensa": [
-      {
-        "recompensa": "Ambición Perdida",
-        "cantidad": 1
-      }
-    ],
-    "condicion": [],
-    "nivel": "11",
-    "permanente": true,
-    "boss": false
   },
   {
     "id": 27,
@@ -516,12 +576,13 @@
     ],
     "recompensa": [
       {
-        "recompensa": "Ambición Perdida",
+        "recompensa": "Ambicion Perdida",
         "cantidad": 1
       }
     ],
     "condicion": [],
     "nivel": "11",
+    "tiempo": 8,
     "permanente": true,
     "boss": false
   },
@@ -541,6 +602,7 @@
     "recompensa": [],
     "condicion": [],
     "nivel": "12",
+    "tiempo": 7,
     "permanente": false,
     "boss": true
   },
@@ -556,6 +618,7 @@
     "recompensa": [],
     "condicion": [],
     "nivel": "13",
+    "tiempo": 6,
     "permanente": false,
     "boss": true
   },
@@ -571,10 +634,11 @@
     "recompensa": [],
     "condicion": [],
     "nivel": "14",
+    "tiempo": 10,
     "permanente": false,
     "boss": true
   },
-  
+
   {
     "id": 30,
     "problema": "Eres Olvidado",
@@ -587,6 +651,7 @@
     "recompensa": [],
     "condicion": [],
     "nivel": "15",
+    "tiempo": 30,
     "permanente": false,
     "boss": true
   }

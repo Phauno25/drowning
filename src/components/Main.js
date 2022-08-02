@@ -27,19 +27,24 @@ const Main = () => {
 
 
   return (
-    <div>
+    <div className='container'>
+      <div className='row'>
 
 
-      <div>
-        {problema.map(e => {
-          if (e.nivel <= level) {
-            return (<Problema key={e.id} problema={e} />)
+        <div className='col'>
+          {problema.map(e => {
+            if (e.nivel <= level && level < 14) {
+              return (<Problema key={e.id} problema={e} />)
+            }
+            if (e.nivel == level && level >= 14) {
+              return (<Problema key={e.id} problema={e} />)
+            }
           }
-        }
-        )}
-      </div>
-      <div>
-        <Inventario />
+          )}
+        </div>
+        <div className='col'>
+          <Inventario />
+        </div>
       </div>
     </div>
   )

@@ -4,3 +4,15 @@ body{
 .d-none{
     display: none;
 }
+/* $white: #ffffff;
+
+$theme-colors: (
+    "light":      #9dd6de #fdf7d7,
+    "dark":       #0a0a07,
+    "primary":    #232431,
+    "secondary":  #134a4c,
+    "info":       #25887b,
+    "success":    #169759,
+    "warning":    #ddc818,
+    "danger":     #e91f0a,
+); */

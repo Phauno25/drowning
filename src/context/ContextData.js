@@ -21,11 +21,14 @@ const inventarioInicial = [
     {id:15,nombre:"Stress",cantidad:0},
     {id:16,nombre:"Respeto",cantidad:0},
     {id:17,nombre:"Proyecto",cantidad:0},
-    {id:18,nombre:"cosas",cantidad:0},
+    {id:18,nombre:"Cosas",cantidad:0},
     {id:19,nombre:"Sueños Rotos",cantidad:0},
     {id:20,nombre:"Ambicion Perdida",cantidad:0},
     {id:21,nombre:"Ver Amigo",cantidad:0},
-    
+    {id:22,nombre:"Soltero",cantidad:1},
+    {id:23,nombre:"Sexo",cantidad:0},
+    {id:24,nombre:"Desempleado",cantidad:1},
+    {id:25,nombre:"ExpLaboral",cantidad:0},
 
 ]
 
