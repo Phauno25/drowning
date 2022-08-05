@@ -34,7 +34,7 @@ const inventarioInicial = [
 
 const ContextProvider = ({ children }) => {
 
-    let [level, setLevel] = useState(1);
+    const [level, setLevel] = useState(1);
     const [inventario,setInventario] = useState(inventarioInicial)
     const [counter,setCounter] = useState(0)
 

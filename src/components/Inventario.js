@@ -3,16 +3,16 @@ import { ContextData } from '../context/ContextData'
 
 const Inventario = () => {
 
-    const { inventario } = useContext(ContextData);
+    let { inventario } = useContext(ContextData);
 
     return (
         <div>
-            <ul>
+            <ul className='list-group'>
                 {inventario.map(e => {
-                    if (e.id <=20 && e.cantidad > 0) {
-                        return <li key={e.id}>{`${e.cantidad} ${e.nombre}`}</li>
+                    if (e.id < 20 && e.cantidad > 0) {
+                        return <li className='list-group-item' key={e.id}>{`${e.cantidad} ${e.nombre}`}</li>
                     }
-                   
+
                 })}
             </ul>
         </div>

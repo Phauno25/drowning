@@ -5,8 +5,9 @@ import Problema from './Problema'
 
 const Main = () => {
 
-  const { level, inventario } = useContext(ContextData);
+  const { level } = useContext(ContextData);
   const [problema, setProblema] = useState([]);
+
 
   useEffect(() => {
 
@@ -26,12 +27,14 @@ const Main = () => {
   }, [])
 
 
+
+
   return (
     <div className='container'>
       <div className='row'>
 
 
-        <div className='col'>
+        <div className='col-9'>
           {problema.map(e => {
             if (e.nivel <= level && level < 14) {
               return (<Problema key={e.id} problema={e} />)
@@ -42,8 +45,9 @@ const Main = () => {
           }
           )}
         </div>
-        <div className='col'>
+        <div className='col-3'>
           <Inventario />
+
         </div>
       </div>
     </div>
