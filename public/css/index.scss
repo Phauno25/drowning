@@ -1,0 +1,33 @@
+
+.d-none{
+    display: none;
+} ;
+
+$light:#fdf7d7;
+$black: #161344;
+$blue: #5783b5;
+$gray: #313361;
+$red: #f02d1f;
+$green: #3bad6f;
+$yellow: #e3ce38;
+$cyan: #b5dbec;
+
+
+
+ $theme-colors: (
+    "light":      #fdf7d7,
+    "dark":       #161344,
+    "primary":    #313361,
+    "secondary":  #5783b5,
+    "info":       #b5dbec,
+    "success":    #3bad6f,
+    "warning":    #e3ce38,
+    "danger":     #f02d1f,
+); 
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif;
+}

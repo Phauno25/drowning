@@ -30,11 +30,11 @@ const Main = () => {
 
 
   return (
-    <div className='container'>
+    <div className='container-xl'>
       <div className='row'>
 
 
-        <div className='col-9'>
+        <div className='col-md-9 col-12'>
           {problema.map(e => {
             if (e.nivel <= level && level < 14) {
               return (<Problema key={e.id} problema={e} />)
@@ -45,7 +45,7 @@ const Main = () => {
           }
           )}
         </div>
-        <div className='col-3'>
+        <div className='col-md-3 col-12'>
           <Inventario />
 
         </div>
@@ -55,3 +55,4 @@ const Main = () => {
 }
 
 export default Main
+

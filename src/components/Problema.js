@@ -159,31 +159,35 @@ const Problema = props => {
     return (
 
         <div className={`row ${display}`}>
-            <div className="col-4">
+
+            <div className="col-md-4 col-6">
                 <p className="mr-4">{`${problema} `}</p>
             </div>
-            <div className="col-4">
+
+            <div className="col-2">
+                {!disabled ? <button id={`resolver${id}`} className="btn btn-secondary text-white btn-sm" onClick={() => resolver()}>Resolver</button> : ""}
+
+                <p id={`progreso${id}`}></p>
+            </div>
+
+            <div className="col-md-6 col-6 justify-content-around">
                 {sacrificio.map(e => {
                     const index = inventario.findIndex(x => x.nombre === e.sacrificio);
                     if (inventario[index].id <= 20) {
-                        return <span className="text-danger">-{e.cantidad} {e.sacrificio} </span>
+                        return <span className=" mx-1 badge bg-danger">-{e.cantidad} {e.sacrificio} </span>
                     }
 
                 })}
                 {recompensa.map(e => {
                     const index = inventario.findIndex(x => x.nombre === e.recompensa);
                     if (inventario[index].id <= 20) {
-                        return <span className="text-success">+{e.cantidad} {e.recompensa} </span>
+                        return <span className="mx-1 badge bg-success">+{e.cantidad} {e.recompensa} </span>
                     }
 
 
                 })}
             </div>
-            <div className="col-2">
-                {!disabled ? <button id={`resolver${id}`} className="btn btn-primary btn-sm" onClick={() => resolver()}>Resolver</button> : ""}
-
-                <p id={`progreso${id}`}></p>
-            </div>
+            
 
 
         </div >
