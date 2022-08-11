@@ -247,6 +247,7 @@
     ],
     "condicion": [],
     "nivel": "9",
+    "tiempo": 8,
     "permanente": false,
     "boss": true
   },
@@ -276,7 +277,7 @@
       }
     ],
     "nivel": "9",
-    "tiempo": 8,
+    "tiempo": 5,
     "permanente": true,
     "boss": false
   },
@@ -373,7 +374,7 @@
       }
     ],
     "nivel": "9",
-    "tiempo": 3,
+    "tiempo": 5,
     "permanente": true,
     "boss": false
   },
@@ -434,6 +435,11 @@
       {
         "sacrificio": "Conocimiento",
         "cantidad": 4
+      }
+      ,
+      {
+        "sacrificio": "ExpLaboral",
+        "cantidad": 100
       }
     ],
     "recompensa": [

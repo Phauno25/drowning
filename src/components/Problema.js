@@ -1,12 +1,30 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { ContextData } from "../context/ContextData";
 
 const Problema = props => {
 
     const { problema, id, permanente, sacrificio, recompensa, condicion, boss, tiempo } = props.problema;
-    let { counter, setCounter, level, setLevel, inventario, setInventario } = useContext(ContextData);
+    let { level, setLevel, inventario, setInventario } = useContext(ContextData);
     const [display, setDisplay] = useState("");
     const [disabled, setDisabled] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [background, setBackground] = useState("bg-warning");
+    const [counter, setCounter] = useState(0);
+
+
+    useEffect(() => {
+        setTimeout(() => {
+            setBackground("");
+        }, 10)
+
+    }, []);
+    useEffect(() => {
+        setBackground("bg-warning");
+        setTimeout(() => {
+            setBackground("");
+        }, 200)
+
+    }, [counter]);
 
     useEffect(() => {
 
@@ -26,7 +44,7 @@ const Problema = props => {
         }
         validarCondicion();
 
-    }, [counter, inventario, level]);
+    }, [inventario, level]);
 
     const validarSacrificio = () => {
         let a = 0;
@@ -53,53 +71,82 @@ const Problema = props => {
 
     }
 
-    const resolver = async () => {
+    const resolver = async (time) => {
 
-        iniciarProgreso().then(() => {
-            switch (id) {
+        if (!disabled) {
+            iniciarProgreso(time).then(() => {
+                switch (id) {
 
-                case 101: //Muerto
-                    morir()
-                    .then(() => sacrificar())
-                    .then(()=> recompensar())
-                    .then(() => {
-                        setDisabled(false)
-                        let countercito = counter + 1
-                        setCounter(countercito)
-                        subirLevel();
-                    })
-                    break;
+                    case 101: //Muerto
+                        morir()
+                            .then(() => sacrificar())
+                            .then(() => recompensar())
+                            .then(() => {
+                                setDisabled(false)
+                                const newCounter = counter + 1
+                                setCounter(newCounter);
+                                subirLevel();
+                                setLoading(false);
+                            })
+                        break;
+                    case 30: //Olvidado - Final 
+                        morir()
+                        const inv = inventario;
+                        inv.map(e => {
+                            if (e == 22 || e == 24) {
+                                e.cantidad = 1
+                            }
+                            else {
+                                e.cantidad = 0;
+                            }
 
-                default:
-                    sacrificar()
-                        .then(() => recompensar())
-                        .then(() => {
-                            setDisabled(false)
-                            let countercito = counter + 1
-                            setCounter(countercito)
-                            subirLevel();
                         })
+                        setInventario(inv);
+                        setDisabled(false);
+                        setCounter(0);
+                        setLevel(1);
+                        break;
 
-                    break;
-            }
-        })
+
+                    default:
+                        sacrificar()
+                            .then(() => recompensar())
+                            .then(() => {
+                                setDisabled(false)
+                                const newCounter = counter + 1
+                                setCounter(newCounter);
+                                subirLevel();
+                                setLoading(false);
+                            })
+
+                        break;
+                }
+            })
+        }
+
     }
 
-    const iniciarProgreso = () => {
+    const iniciarProgreso = (time) => {
+
         return new Promise((resolve, reject) => {
-            setDisabled(true);
+            setLoading(true);
             let num = 0;
             const progreso = document.getElementById(`progreso${id}`);
-            const intervalo = setInterval(thick, 2);
+            const intervalo = setInterval(thick, time * 6);
             function thick() {
                 if (num < 100) {
                     num++;
-                    progreso.innerText = `[${num}%]`;
+                    progreso.style.width = `${num}%`;
+                    progreso.ariaValueNow = `${num}`;
+
                 }
                 else {
                     progreso.innerText = "";
+                    progreso.style.width = `${0}%`;
+                    progreso.ariaValueNow = `${0}`;
                     clearInterval(intervalo);
                     resolve(true);
+
                 }
             }
         })
@@ -143,7 +190,7 @@ const Problema = props => {
                 if (e.id <= 2) {
                     inv.push(e)
                 }
-                else{
+                else {
                     e.cantidad = 0;
                 }
                 console.log(inv)
@@ -158,16 +205,25 @@ const Problema = props => {
 
     return (
 
-        <div className={`row ${display}`}>
+        <div className={`row ${display} problema border-bottom align-items-center ${background}`}>
 
             <div className="col-md-4 col-6">
-                <p className="mr-4">{`${problema} `}</p>
+                <p className="my-2">{`${problema} `}</p>
             </div>
 
-            <div className="col-2">
-                {!disabled ? <button id={`resolver${id}`} className="btn btn-secondary text-white btn-sm" onClick={() => resolver()}>Resolver</button> : ""}
+            <div className="col-2 d-flex align-items-center">
 
-                <p id={`progreso${id}`}></p>
+                <div className={`w-100 ${!loading ? "d-none" : ""}`}>
+                    <div className="progress">
+                        <div id={`progreso${id}`} className={`progress-bar progress-bar-striped bg-success`} role="progressbar" aria-label="Success striped example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <button id={`resolver${id}`} className={!disabled ? `btn btn-secondary ${loading ? "d-none" : ""} text-white btn-sm` : `btn btn-warning ${display} text-white btn-sm`} onClick={() => resolver(tiempo)}>{disabled ? "No alcanza" : "Resolver"}</button>
+
             </div>
 
             <div className="col-md-6 col-6 justify-content-around">
@@ -187,7 +243,7 @@ const Problema = props => {
 
                 })}
             </div>
-            
+
 
 
         </div >

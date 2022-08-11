@@ -30,8 +30,11 @@ const Main = () => {
 
 
   return (
-    <div className='container-xl'>
-      <div className='row'>
+    <div className='container-xl main'>
+      {/* <div className='row'>
+        <h1 className='text-primary text-center mb-5 titulo'>AHOGANDOTE EN PROBLEMAS </h1>
+      </div> */}
+      <div className='row mt-3'>
 
 
         <div className='col-md-9 col-12'>

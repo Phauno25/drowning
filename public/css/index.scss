@@ -14,7 +14,7 @@ $cyan: #b5dbec;
 
 
 
- $theme-colors: (
+  $theme-colors: (
     "light":      #fdf7d7,
     "dark":       #161344,
     "primary":    #313361,
@@ -23,11 +23,26 @@ $cyan: #b5dbec;
     "success":    #3bad6f,
     "warning":    #e3ce38,
     "danger":     #f02d1f,
-); 
+);  
+
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    background-image: url(../img/bgWaveH.png);
+background-repeat: no-repeat;
+background-position: bottom;
+
+}
+.problema{
+    transition: background-color 0.3s ease-in-out;
+}
+
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@900&display=swap');
 
-body{
-    font-family: 'Nunito', sans-serif;
-}
