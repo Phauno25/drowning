@@ -6,14 +6,15 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 0 3rem 0;
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
   background-image: url(../img/bgWaveH.png);
   background-repeat: no-repeat;
+  background-size: 100% 20%;
   background-position: bottom;
 }
 
@@ -10942,5 +10943,23 @@ textarea.form-control-lg {
   }
   .d-print-none {
     display: none !important;
+  }
+}
+@media screen and (max-width: 370px) {
+  body {
+    background-size: 100% 20%;
+  }
+  span {
+    font-size: 10px;
+  }
+  .container-xl {
+    padding: 0;
+  }
+  .problema {
+    padding: 1rem 0;
+  }
+  .pildoras {
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=index.css.map */

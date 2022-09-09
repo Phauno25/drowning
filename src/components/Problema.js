@@ -132,7 +132,7 @@ const Problema = props => {
             setLoading(true);
             let num = 0;
             const progreso = document.getElementById(`progreso${id}`);
-            const intervalo = setInterval(thick, time * 6);
+            const intervalo = setInterval(thick, time * 0);
             function thick() {
                 if (num < 100) {
                     num++;
@@ -205,13 +205,13 @@ const Problema = props => {
 
     return (
 
-        <div className={`row ${display} problema border-bottom align-items-center ${background}`}>
+        <div className={`d-flex ${display} py-2 flex-wrap problema border-bottom align-items-center ${background}`}>
 
             <div className="col-md-4 col-6">
-                <p className="my-2">{`${problema} `}</p>
+                <p className="ms-2 my-2">{`${problema} `}</p>
             </div>
 
-            <div className="col-2 d-flex align-items-center">
+            <div className="col-4 col-md-2 d-flex align-items-center justify-content-end">
 
                 <div className={`w-100 ${!loading ? "d-none" : ""}`}>
                     <div className="progress">
@@ -226,7 +226,7 @@ const Problema = props => {
 
             </div>
 
-            <div className="col-md-6 col-6 justify-content-around">
+            <div className="col-5 col-md-6 justify-content-around pildoras">
                 {sacrificio.map(e => {
                     const index = inventario.findIndex(x => x.nombre === e.sacrificio);
                     if (inventario[index].id <= 20) {
