@@ -53,7 +53,7 @@ const Main = () => {
 
         </div>
         <div className='col-12 footer'>
-          <code className='firma'><i class="bi bi-code"></i> Pablo Coronel. 2022. Made with React for academic purposes and fun.&nbsp;   
+          <code className='firma'><i class="bi bi-code"></i> Pablo Coronel 2022. Made with React for academic purposes and fun.&nbsp;   
           <i class="bi bi-code-slash"> </i></code>
         </div>
       </div>

@@ -29,6 +29,7 @@ body {
   max-width: 80%;
   bottom: 0;
   left: 0;
+  padding: 0;
 }
 .footer code {
   color: white;
@@ -43,7 +44,8 @@ body {
 }
 @media screen and (max-width: 370px) {
   body {
-    background-size: 100% 100%;
+    background-image: url(../img/bgWaveV2.png);
+    background-size: 100% 90%;
   }
   span {
     font-size: 10px;
