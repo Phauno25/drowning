@@ -10,14 +10,14 @@ body {
   height: 100vh;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 0 4rem 0;
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
   background-image: url(../img/bgWaveH.png);
   background-repeat: no-repeat;
   background-size: 100% 30%;
   background-position: bottom;
-  overflow: hidden;
+  position: relative;
 }
 
 .problema {
@@ -37,14 +37,13 @@ body {
 
 @media screen and (max-width: 768px) {
   body {
-    height: auto;
     min-height: 100vh;
-    overflow: hidden;
+    height: auto;
   }
 }
 @media screen and (max-width: 370px) {
   body {
-    background-size: 100% 30%;
+    background-size: 100% 100%;
   }
   span {
     font-size: 10px;

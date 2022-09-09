@@ -132,7 +132,7 @@ const Problema = props => {
             setLoading(true);
             let num = 0;
             const progreso = document.getElementById(`progreso${id}`);
-            const intervalo = setInterval(thick, time * 6);
+            const intervalo = setInterval(thick, time * 0);
             function thick() {
                 if (num < 100) {
                     num++;
