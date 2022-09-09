@@ -52,9 +52,13 @@ const Main = () => {
           <Inventario />
 
         </div>
+        <div className='col-12 footer'>
+          <p className='firma'><i class="bi bi-code"></i> Pablo Coronel. 2022. Made with React for academic purposes and fun.&nbsp;   
+          <i class="bi bi-code-slash"> </i></p>
+        </div>
       </div>
     </div>
-    
+
   )
 }
 

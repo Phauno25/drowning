@@ -132,7 +132,7 @@ const Problema = props => {
             setLoading(true);
             let num = 0;
             const progreso = document.getElementById(`progreso${id}`);
-            const intervalo = setInterval(thick, time * 0);
+            const intervalo = setInterval(thick, time * 6);
             function thick() {
                 if (num < 100) {
                     num++;
@@ -205,7 +205,7 @@ const Problema = props => {
 
     return (
 
-        <div className={`d-flex ${display} py-2 flex-wrap problema border-bottom align-items-center ${background}`}>
+        <div className={`d-flex ${display} py-3 flex-wrap problema border-bottom align-items-center ${background}`}>
 
             <div className="col-md-4 col-6">
                 <p className="ms-2 my-2">{`${problema} `}</p>
