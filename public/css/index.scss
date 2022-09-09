@@ -37,6 +37,7 @@ body {
   overflow: hidden;
 
 }
+
 .problema {
   transition: background-color 0.3s ease-in-out;
 }
@@ -45,7 +46,7 @@ body {
     max-width: 80%;
     bottom: 0;
     left: 0;
-    p{
+    code{
         color: white;
         margin: 0;
 
